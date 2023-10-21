@@ -1,0 +1,58 @@
+命令格式样式：python demo.py  --config config/dataset_name.yaml --driving_video path/to/driving --source_image path/to/source --checkpoint path/to/checkpoint --relative --adapt_scale
+
+命令示例：python demo.py --config config/vox-256.yaml --driving_video C:\Users\23267\Desktop\model\A.mp4 --source_image C:\Users\23267\Desktop\model\1.png --checkpoint C:\Users\23267\Desktop\model\vox-cpk.pth --relative --adapt_scale --cpu（该命令使用cpu运行，如果使用gpu运行那么去掉后面的--cpu）
+
+python demo.py --config config/vox-256.yaml --driving_video C:\Users\23267\Desktop\model\A.mp4 --source_image C:\Users\23267\Desktop\model\1.png --checkpoint C:\Users\23267\Desktop\model\model_1\vox-cpk.pth --relative --adapt_scale
+
+
+https://www.youtube.com/watch?v=qN-pgCIScrw
+https://www.youtube.com/watch?v=bFJYPQXHJCM
+真人转动画：https://www.youtube.com/watch?v=HbDbZAw_vQ8 	
+
+
+检查gpu版本的torch是否安装成功：python -c "import torch; print('Torch version:', torch.__version__); print('CUDA available:', torch.cuda.is_available()); print('Number of GPUs:', torch.cuda.device_count()); print('GPU name:', torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'None')"
+
+!sudo apt-get install python3.8 python3.8-distutils  安装sadtalker必备的指令
+
+ffmpeg -i input.mp3 -filter:a "atempo=0.907032" output.mp3  对音频进行精确的快进或慢放速度设置
+
+pip install 应用  这种安装方式的取代方法：pip install git+https://github.com/ultralytics/ultralytics.git@main
+
+conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.8 -c pytorch -c nvidia  torch的安装方法：
+音频后端安装：pip install soundfile
+
+https://www.youtube.com/watch?v=AIOMcbk-UL8
+
+mysql -h 43.153.180.161 -P 3306 -u word_hMMTaw -p
+word_rrsPJA
+root身份时，by：mysql_rMpNws
+
+使用命令：
+sudo nano /etc/apt/sources.list
+更新软件源后，出现错误：Warning: apt-key is deprecated. Manage keyring files in trusted.gpg.d instead (see apt-key(8)).
+Executing: /tmp/apt-key-gpghome.1BsqykHHTp/gpg.1.sh --keyserver keyserver.ubuntu.com --recv-keys ED444FF07D8D0BF6
+gpg: key ED444FF07D8D0BF6: 2 duplicate signatures removed
+gpg: 密钥 ED444FF07D8D0BF6：“Kali Linux Repository <devel@kali.org>” 2 个新的签名
+gpg: 处理的总数：1
+gpg:         新的签名：2
+
+解决方案，在终端输入命令：
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ED444FF07D8D0BF6
+
+kali linux 的几大更新源：
+阿里源：
+deb http://mirrors.aliyun.com/kali kali-rolling main non-free contrib
+deb-src http://mirrors.aliyun.com/kali kali-rolling main non-free contrib
+清华大学镜像源：
+deb http://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-free
+deb-src https://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-free
+中科大Kali镜像源
+deb http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
+deb-src http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
+
+
+
+
+
+
+
